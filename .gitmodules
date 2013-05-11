@@ -1,3 +1,6 @@
 [submodule "transformer"]
 	path = transformer
 	url = git@github.com:petrosalema/transformer.git
+[submodule "parallax-deck"]
+	path = parallax-deck
+	url = git@github.com:petrosalema/parallax-deck.git

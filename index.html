@@ -11,15 +11,48 @@
 
 		<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="basic.css" type="text/css" />
+
+		<link rel="stylesheet" type="text/css"
+		      href="http://alohaeditor.org/builds/stable/alohaeditor-0.23.6/aloha/css/aloha.css">
+
+		<script>var Aloha={settings:{sidebar:{disabled:true}}};</script>
+
+		<script src="http://alohaeditor.org/builds/stable/alohaeditor-0.23.6/aloha/lib/aloha-full.min.js"
+		        data-aloha-plugins="common/ui,
+		                            common/format,
+		                            common/table,
+		                            common/list,
+		                            common/link,
+		                            common/highlighteditables,
+		                            common/undo,
+		                            common/contenthandler,
+		                            common/paste,
+		                            common/characterpicker,
+		                            common/commands,
+		                            common/block,
+		                            common/image,
+		                            common/abbr,
+		                            common/horizontalruler,
+		                            common/align,
+		                            common/dom-to-xhtml,
+		                            extra/textcolor,
+		                            extra/hints,
+		                            extra/metaview,
+		                            extra/wai-lang,
+		                            extra/flag-icons,
+		                            extra/linkbrowser,
+		                            extra/imagebrowser,
+		                            extra/cite"></script>
 	</head>
 	<body>
 		<div class="page">
-			<div class="menu">
-				<br/><br/><br/>
-				&dash;&dash;<br/>
-				&dash;&dash;<br/>
-				&dash;&dash;
-			</div>
+			<a href="https://aloha-editor-barcamp.eventbrite.com" class="shut-up-and-take-my-registration">
+				<div class="middle">sign me up!</div>
+			</a>
+
+			<a href="#scrollTo(start)" class="logo">
+				<img src="aloha-flat-logo.png" alt=""/>
+			</a>
 
 			<header id="start" class="parallax tomato">
 				<div>
@@ -27,8 +60,27 @@
 						<div class="lettering">
 							<b class="a"></b><b class="l"></b><b class="o"></b><b class="h"></b><b class="a last"></b>
 						</div>
-						<div class="sub-lettering">
-							<div contentEditable="true">aloha editor &bull; barcamp 2013 </div>
+						<br /><br />
+						<div class="title">
+							<b>aloha</b> editor
+							<img src="aloha-flat-logo.png" alt=""/>
+							<b>bar</b>camp <b>2013</b>
+						</div>
+						<div class="center">
+							<a href="https://aloha-editor-barcamp.eventbrite.com">
+								Thursday <b>June 6</b> &dash; Friday <b>June 7</b>
+							</a>
+							&bull;
+							<a href="#scrollTo(location)">
+								Gentics HQ (Gonzagagasse 11, Vienna, Austria)
+							</a>
+						</div>
+						<br /><br />
+						<div class="sosa">
+							<a href="#scrollTo(info)" title="Information">7</a>
+							<a href="#scrollTo(barcamp)" title="What's a BarCamp?">h</a>
+							<a href="#scrollTo(schedule)" title="Schedule">Ġ</a>
+							<a href="#scrollTo(location)" title="Location">n</a>
 						</div>
 					</div>
 				</div>
@@ -44,70 +96,86 @@
 							creator for the open web.
 						</p>
 						<p>
-							Between June 6 and 7, the Aloha Editor community is hosting
-							a <a href="#whats-a-barcamp">barcamp</a> to share some of
-							the technologies and ideas around <b>WYSIWYG</b> editors,
-							<b>JavaScript</b>, and <b>HTML5</b>, right in the heart of
-							<a href="http://www.austria.info/at/tags/wien">Vienna</a>.
+							Between <b>June 6 and 7</b>, the Aloha Editor
+							community is holding a
+							<a href="#scrollTo(barcamp)">barcamp</a> for
+							professionals and enthusiasts to explorer topics in
+							advanced web development, with a focus on WYSIWYG
+							editing.
 						</p>
 						<p>
-							If you've ever had to write contentEditable="true" in any
-							of your code or markup, then <a href="#location">you really need be there</a>!
-						</p>
-						<p class="bigger">
-							Not to hype this too much, but... it's gonna be awesome!
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="parallax dijon" style="color:#FAA226">
-				<div>
-					<div class="middle">
-						This is a test
-					</div>
-				</div>
-			</section>
-
-			<section id="whats-a-barcamp" class="parallax fog">
-				<div>
-					<div class="middle">
-						<p class="bigger">
-							A
-							<a href="https://en.wikipedia.org/wiki/BarCamp">BarCamp</a>
-							emphasises human interaction.
+							This is an opportunity to learn new techniques,
+							tools, and technologies from people who really know
+							their stuff, and are developing exciting new
+							applications and services on the web.
 						</p>
 						<p>
-							The Aloha Editor BarCamp will be a place for professionals,
-							hackers, and enthusiasts to share and explorer technology
-							and ideas around WYSIWYG editors, and emerging web
-							technology.
-						</p>
-						<p>
-							It's an opportunity to ask "why the heck...", and "how on
-							earth do I..." questions to experts who can tell you the
-							difference between nodeName, and tagName, and which
-							combination of
-							<a href="http://stackoverflow.com/questions/2950598/ie8-browser-mode-vs-document-mode?lq=1">
-								Internet Explorer's 16 browser/document modes
+							<a class="bigger" href="https://aloha-editor-barcamp.eventbrite.com">
+								Come join us in the center of the history and
+								beautiful city Vienna ... it's <u>free</u>!
 							</a>
-							will crash your code.
+						</p>
+						<div class="sosa">7</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="barcamp" class="parallax dijon" style=color:#3B3140"">
+				<div>
+					<div class="middle">
+						<p class="bigger">
+							The
+							<a href="https://en.wikipedia.org/wiki/BarCamp">BarCamp</a>
+							format emphasises human interaction and attendee
+							participation.
+						</p>
+						<p>
+							The sessions will be loosely themed around WYSIWYG
+							editing technology and content creation on the web,
+							but the topics and sessions will be up to the
+							attendees, and can range from discussions and
+							demos, to tutorials and hacking sessions.
+						</p>
+						<p>
+							Presenters may nominate themselves from among the
+							attendees to hold a 40 minute session that would
+							include time for presentating or demonstrating an
+							idea/technique/technology, and time for questions
+							and answers from the other attendees.
+						</p>
+						<p>
+							Impromtu talks, and pre-prepared presentations with
+							slides are both welcomed.
 						</p>
 						<p>
 							If you are working with WYSIWYG editors or with web
-							technology in general, this barcamp will be a great
-							opportunity to hone your development skills, learn best
-							practices and concepts, and a chance to write code with
-							great JavaScript developers.
+							technology in general you should really come and
+							give a talk about what you're doing.
 						</p>
-						<p class="bigger">Oh... and it's <u>free</u>, by the way!</p>
+						<p>
+							The barcamp is open to all who are interested in
+							advanced web technologies <span class="bigger">...
+							and did we mention it's <u>free</u>?</span>
+						</p>
+						<div class="sosa">h</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="schedule" class="parallax fog">
+				<div>
+					<div class="middle">
+						<p class="center bigger">
+							Coming soon...
+						</p>
+						<div class="sosa">Ġ</div>
 					</div>
 				</div>
 			</section>
 
 			<section id="location" class="parallax">
-			<iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-			        xsrc="http://maps.google.com/maps?ll=48.216800,16.37065&amp;spn=0.007063,0.015986&amp;cid=408223738660821454&amp;output=embed"></iframe>
+				<iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+				        src="http://maps.google.com/maps?ll=48.216800,16.37065&amp;spn=0.007063,0.015986&amp;cid=408223738660821454&amp;output=embed"></iframe>
 			</section>
 
 			<footer id="end" class="parallax">
@@ -116,11 +184,22 @@
 						<div class="lettering colored-lettering">
 							<b class="a"></b><b class="l"></b><b class="o"></b><b class="h"></b><b class="a last"></b>
 						</div>
-						<div class="sub-lettering bigger tomato">
-							editor
+
+						<div class="center">
+							<a href="www.aloha-editor.org">
+								<img src="http://www.alohaeditor.org/logo/Aloha%20Editor%20logo%20text%20256.png"
+								     alt="" />
+							</a>
 						</div>
-						<div id="tagline" class="scrolling-bg clipped-text" contentEditable="true">
-							&ldquo; the <b style="border-bottom: 10px solid #fff">shape</b> of things to come &rdquo;
+
+						<div id="tagline" class="scrolling-bg clipped-text show-highlight" contentEditable="true">
+							&ldquo; the <u>shape</u> of things to come &rdquo;
+						</div>
+
+						<div class="center sosa">
+							<a href="https://aloha-editor-barcamp.eventbrite.com">
+								<img src="http://cdn.memegenerator.net/instances/250x250/37770884.jpg" alt="" />
+							</a>
 						</div>
 					</div>
 				</div>
@@ -130,7 +209,7 @@
 		<script src="transformer/vendor/jquery.js"></script>
 		<script src="transformer/math.js"></script>
 		<script src="transformer/transformer.js"></script>
-
+		<script src="parallax-deck/parallax-deck.js"></script>
 		<script src="app.js"></script>
 	</body>
 </html>
