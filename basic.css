@@ -1,0 +1,230 @@
+@font-face {
+	font-family: 'barcamp';
+	font-weight: 400;
+	font-style: normal;
+	src: url('barcamp.woff') format('woff');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #f1f1f1;
+	color: #fff;
+}
+
+header>*, section>*, footer>* {
+	display: table;
+	width: 50%;
+	margin: 0 auto;
+}
+
+section {
+	font-family: 'plain', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+p { margin: 0 0 1em; }
+p:last-child { margin: 0; }
+
+a {
+	color: #3b3140;	
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 3px solid #3b3140;
+}
+
+u {
+	text-decoration: none;
+	border-bottom: 3px solid rgba(0,0,0,0.3);
+}
+
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.parallax {
+	overflow: hidden;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.bigger {
+	font-size: 30px;
+	font-family: 'barcamp';
+}
+
+.scrolling-bg {
+	background: #2e3846 url(http://adamwhitcroft.com/batch/img/batch-background.png);
+	-webkit-animation: bgscroll 20s infinite linear;
+	   -moz-animation: bgscroll 20s infinite linear;
+	    -ms-animation: bgscroll 20s infinite linear;
+	     -o-animation: bgscroll 20s infinite linear;
+	        animation: bgscroll 20s infinite linear;
+}
+
+.clipped-text {
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: rgba(0,0,0,0);
+
+}
+
+.menu {
+	z-index: 999;
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	width: 55px;
+	height: 55px;
+	border-radius: 30px;
+	background: #f1f1f1;
+	color: #bebebe;
+	line-height: 6px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center; 
+}
+
+.lettering {
+	margin: 0 auto 8px;
+	width: 450px;
+	height: 100px;
+}
+.lettering>b {
+	cursor: default;
+	position: relative;
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-color: #fff;
+	color: rgba(0,0,0,0);
+	line-height: 1em;
+	-webkit-transition: border-color .3s,
+	                    background .3s;
+}
+.lettering>.a {
+	border-width: 0 50px 100px 50px;
+	border-color: transparent transparent #fff transparent;
+}
+.lettering>.l {
+	border-width: 100px 50px 0 0;
+}
+.lettering>.o {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	border-width: 0;
+	background: #fff;
+}
+.lettering>.h {
+	border-width: 100px 100px 0 0;
+}
+
+
+.lettering>.a:hover, .colored-lettering>.a {
+	border-color: transparent transparent #f5e653 transparent;
+}
+.lettering>.l:hover, .colored-lettering>.l {
+	border-color: #79be6a;
+}
+.lettering>.o:hover, .colored-lettering>.o {
+	background: #58a9da;
+}
+.lettering>.h:hover, .colored-lettering>.h {
+	border-color: #3b3140;
+}
+.lettering>.a:last-child:hover, .colored-lettering>.a:last-child {
+	border-bottom-color: #95abae;
+}
+
+.sub-lettering {
+	width: 450px;
+	margin: 0 auto;
+	background: #fff;
+	text-align: center;
+	padding: 5px 0;
+}
+.sub-lettering * {
+	color: #ff6347;
+	font-family: 'plain', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: -0.05em;
+	line-height: 1em;
+	outline: 0;
+}
+
+#you {
+	width: 70px;
+	height: 70px;
+	background: #f24;
+	border: 4px dashed black;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'plain', sans-serif;
+	line-height: 70px;
+	font-size: 14px;
+	text-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+
+#tagline {
+	font-size: 80px;
+	font-family: 'plain', sans-serif;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	text-align: center;
+	outline: 0;
+}
+
+#location>iframe {
+	width: 100%;
+}
+
+.tomato {
+	background: #ff6347;
+	color:#fff;
+}
+.dijon {
+	background:#f5e653;
+}
+.ocean {
+	background:#58a9da;
+	color:#fff;
+}
+.fog {
+	background: #dbebed;
+	color: #95abae;
+}
+.fog:hover {
+	background: #e3f1f2
+	color: #6c999d;
+}
+
+
+@-webkit-keyframes bgscroll {
+	from {background-position:0 0;}
+	to {background-position:0 -520px;}
+}
+@-moz-keyframes bgscroll {
+	from {background-position:0 0;}
+	to {background-position:0 -520px;}
+}
+@-ms-keyframes bgscroll {
+	from {background-position:0 0;}
+	to {background-position:0 -520px;}
+}
+@-o-keyframes bgscroll {
+	from {background-position:0 0;}
+	to {background-position:0 -520px;}
+}
+@keyframes bgscroll {
+	from {background-position:0 0;}
+	to {background-position:0 -520px;}
+}
