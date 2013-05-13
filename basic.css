@@ -254,15 +254,15 @@ u {
 	color: #6c999d;
 }
 
-.page .aloha-editable-active,
-.page .aloha-editable-active[contenteditable=true]:focus {
+.main .aloha-editable-active,
+.main .aloha-editable-active[contenteditable=true]:focus {
 	outline-color: rgba(0,0,0,0.2) !important;
 }
-.page .aloha-editable-highlight:not(.show-highlight) {
+.main .aloha-editable-highlight:not(.show-highlight) {
 	outline-color: transparent !important;
 }
 
-.page .sub-lettering .aloha-editable {
+.main .sub-lettering .aloha-editable {
 	min-height: 1em;
 }
 
@@ -284,7 +284,25 @@ u {
 	top: 20px;
 	left: 20px;
 	border: none;
+	opacity: 0.8;
 }
 .logo>img {
 	width: 50px;
+}
+
+.share {
+	position: fixed;
+	z-index: 9999;
+	top: 35px;
+	right: 120px;
+	font-family: 'sosa';
+	font-size: 40px;
+	letter-spacing: -0.12em;
+}
+.share>a {
+	border: none;
+	color: rgba(0,0,0,0.2);
+}
+.share>a:hover {
+	color: rgba(255,255,255,0.8);
 }
