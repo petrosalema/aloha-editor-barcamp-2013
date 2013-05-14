@@ -116,7 +116,7 @@ u {
 	height: 80px;
 	border: none;
 	border-radius: 40px;
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.2);
 	color: #fff;
 	font-family: 'barcamp';
 	font-weight: bold;
@@ -291,11 +291,11 @@ u {
 .share {
 	position: fixed;
 	z-index: 9999;
-	top: 35px;
-	right: 120px;
+	top: 40px;
+	right: 110px;
 	font-family: 'sosa';
-	font-size: 40px;
-	letter-spacing: -0.12em;
+	font-size: 30px;
+	letter-spacing: -0.1em;
 }
 .share>a {
 	border: none;
