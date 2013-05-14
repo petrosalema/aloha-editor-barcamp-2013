@@ -37,10 +37,7 @@
 		var offset = Parallaxing.MIN_WINDOW_WIDTH < $(window).width()
 		           ? (indexes[id] || 0) * $(window).height()
 				   : $('#' + id).offset().top;
-
-		$('html, body').animate({
-			scrollTop: offset
-		}, 1000);
+		$('html, body').animate({scrollTop: offset}, 1000);
 	}
 
 	$(document)

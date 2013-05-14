@@ -37,10 +37,8 @@ header>*, section>*, footer>* {
 	margin: 0 auto;
 }
 
-body:not(.parallaxing) header>*,
-body:not(.parallaxing) section>:not(iframe),
-body:not(.parallaxing) footer>* {
-	padding: 30px 0;
+header>*, footer>*, section>:not(iframe) {
+	padding: 50px 0;
 }
 
 section {
