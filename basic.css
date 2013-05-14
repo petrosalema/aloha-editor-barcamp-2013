@@ -136,6 +136,12 @@ u {
 	width: 450px;
 	height: 100px;
 }
+.lettering.animating>* {
+	-webkit-transition: all 1s ease-out;
+	   -moz-transition: all 1s ease-out;
+	     -o-transition: all 1s ease-out;
+	        transition: all 1s ease-out;
+}
 .lettering>b {
 	cursor: default;
 	position: relative;
@@ -146,8 +152,6 @@ u {
 	border-color: #fff;
 	color: rgba(0,0,0,0);
 	line-height: 1em;
-	-webkit-transition: border-color .3s,
-	                    background .3s;
 }
 .lettering>.a {
 	border-width: 0 50px 100px 50px;

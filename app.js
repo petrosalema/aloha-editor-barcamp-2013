@@ -61,6 +61,34 @@
 	Aloha.jQuery('*[contentEditable=true]').aloha();
 
 	$('body').addClass('vendor' + Transformer.VENDOR_PREFIX);
+
+	function animateLettering($lettering) {
+		var win_height = $(window).height();
+		var win_width = $(window).width();
+		var $letters = $lettering.find('>b').each(function () {
+			var sign = Math.random() < 0.5 ? -1 : 1;
+			var x = Math.round(Math.random() * win_width * sign);
+			var y = Math.round(Math.random() * win_height * sign);
+			$(this).css(
+				Transformer.VENDOR_PREFIX + '-transform',
+				'rotate(' + Math.round(Math.random() * 180 * sign) + 'deg) ' +
+				'translate(' + x + 'px, ' + y + 'px) ' +
+				'scale(' + Math.round(2 + (Math.random() * 5)) + ')'
+			).css('opacity', 0);
+		});
+
+		setTimeout(function () {
+			$lettering.addClass('animating');
+			$letters.css(Transformer.VENDOR_PREFIX + '-transform', '').css('opacity', 1);
+		}, 100);
+		setTimeout(function () {
+			$lettering.removeClass('animating');
+		}, 3000);
+	}
+
+	animateLettering($('#title'));
+
+
 }(
 	window.jQuery,
 	window.Parallaxing,
