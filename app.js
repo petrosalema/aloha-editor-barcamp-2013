@@ -80,15 +80,14 @@
 		setTimeout(function () {
 			$lettering.addClass('animating');
 			$letters.css(Transformer.VENDOR_PREFIX + '-transform', '').css('opacity', 1);
-		}, 100);
+		}, 1000);
+
 		setTimeout(function () {
 			$lettering.removeClass('animating');
-		}, 3000);
+		}, 3500);
 	}
 
 	animateLettering($('#title'));
-
-
 }(
 	window.jQuery,
 	window.Parallaxing,
