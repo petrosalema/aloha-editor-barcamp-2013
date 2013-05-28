@@ -132,7 +132,7 @@ u {
 }
 
 .lettering {
-	margin: 0 auto 8px;
+	margin: 0 auto;
 	width: 450px;
 	height: 100px;
 }
@@ -269,8 +269,7 @@ u {
 }
 
 .title {
-	margin-bottom: 20px;
-	font-size: 45px;
+	font-size: 68px;
 	vertical-align: middle;
 	text-align: center;
 	letter-spacing: -0.05em;
