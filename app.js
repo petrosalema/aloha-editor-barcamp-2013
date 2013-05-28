@@ -37,7 +37,6 @@
 		.on('mousemove', mousemove)
 		.on('mousedown', '.lettering>b', mousedown);
 
-
 	// --- parallax deck ---
 
 	$('body').addClass('vendor' + Transformer.VENDOR_PREFIX);
@@ -50,7 +49,7 @@
 	} else {
 		$(document).on('scroll', Parallaxing.scroll);
 		$(window).on('resize', Parallaxing.delayed_resize);
-		Parallaxing.resize();
+		Parallaxing.delayed_resize();
 	}
 
 	// --- scrolling ---
