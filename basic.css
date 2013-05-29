@@ -251,6 +251,9 @@ ul {
 	background:#58a9da;
 	color:#fff;
 }
+.steam {
+	background: #f1f1f1;
+}
 .fog {
 	background: #dbebed;
 	color: #95abae;
@@ -310,4 +313,10 @@ ul {
 }
 .share>a:hover {
 	color: rgba(255,255,255,0.8);
+}
+
+#sponsors a {
+	display: block;
+	margin-bottom: 30px;
+	border-width: 0;
 }

@@ -8,7 +8,7 @@ http://www.alohaeditor.org/about.php
 http://www.gentics.com
 
 # TECHNOLOGY
-jQuery, Modernizr
+jQuery, Modernizr, Sosa Icon Font
 
                             ,oKMMWx,
                          .oXMMMMMMMMKd,             .   ..
