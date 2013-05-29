@@ -71,6 +71,10 @@ u {
 	border-bottom: 3px solid rgba(0,0,0,0.3);
 }
 
+ul {
+	list-style: none;
+}
+
 .center {
 	text-align: center;
 }

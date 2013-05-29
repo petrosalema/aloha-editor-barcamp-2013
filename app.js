@@ -64,10 +64,7 @@
 	function scrollTo(hash) {
 		var match = hash.match(SCROLL_TO);
 		var id = match ? match[1] : hash.replace('#', '');
-		var offset = Parallaxing.MIN_WINDOW_WIDTH < $(window).width()
-		           ? (indexes[id] || 0) * $(window).height()
-				   : $('#' + id).offset().top;
-		$('html, body').animate({scrollTop: offset}, 1000);
+		Parallaxing.scroll_to($('#' + id));
 	}
 
 	$('a[href^="#scrollTo"]').on('click', function () {
@@ -75,7 +72,9 @@
 	});
 
 	if (window.location.hash) {
-		scrollTo(window.location.hash);
+		setTimeout(function () {
+			scrollTo(window.location.hash);
+		}, 500);
 	}
 
 	// --- intro animation ---
